@@ -13,4 +13,3 @@ $(document).ready(function() {
 	$("#tweet").on("click", function() {
 		$("a").attr("href", "https://twitter.com/intent/tweet?text=" + currQuote + " - " + currAuthor);
 	});
-}); 
