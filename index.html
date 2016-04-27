@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Random Quote Generator</title>
     <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script src="rqg.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
@@ -14,22 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"></link>
 </head>
 <body class="container-fluid" id="page">
-		<div class="quoteArea bg-success">
-			<blockquote>
-				<p class="lead text-left">"<span id="quote">Press the button to generate a quote.</span>"</p>
-				<footer id="author">Go on, press the button.</footer>
-			</blockquote>
-		</div>
-		<h6 class="text-primary">
-			By:  Zachary Robbins
-		</h6>
-		<a class="btn btn-primary btn-lg bottom-left" role="button"
-			href="https://twitter.com/intent/tweet?text=Hello%20World" target="_blank"
-			id="tweet">
-			<i class="fa fa-twitter"></i>
-		</a>
-		<button class="btn btn-primary btn-lg bottom-right" role="button" id="generateQuote">
-			Generate a quote
-		</button>
+	<div class="quoteArea bg-success">
+		<blockquote>
+			<p class="lead text-left">"<span id="quote">Press the button to generate a quote.</span>"</p>
+			<footer id="author">Go on, press the button.</footer>
+		</blockquote>
+	</div>
+    <h6 class="text-primary">
+        By:  <a href="http://xaqiri.github.io">Zachary Robbins</a>
+        &nbsp&nbsp&nbsp&nbsp
+        View code on <a href="http://xaqiri.github.io/RandomQuoteGenerator/">github</a>
+    </h6>
+    <a class="btn btn-primary btn-lg bottom-left" role="button"
+		href="https://twitter.com/intent/tweet?text=Hello%20World" target="_blank"
+		id="tweet">
+		<i class="fa fa-twitter"></i>
+	</a>
+	<button class="btn btn-primary btn-lg bottom-right" role="button" id="generateQuote">
+		Generate a quote
+	</button>
 </body>
 </html>
