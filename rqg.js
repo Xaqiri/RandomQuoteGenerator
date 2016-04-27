@@ -6,11 +6,11 @@ $(document).ready(function() {
 		$.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=25&callback=", function(a) {
 			currQuote = $(a[rand].content).text();
 			currAuthor = a[rand].title;
-			$("#quote").html(currQuote);
+            $("#quote").html(currQuote);
 			$("#author").html(currAuthor);
 		});
 	});
 	$("#tweet").on("click", function() {
 		$("a").attr("href", "https://twitter.com/intent/tweet?text=" + currQuote + " - " + currAuthor);
 	});
-}); 
+});
